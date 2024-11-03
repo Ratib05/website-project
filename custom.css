@@ -1,0 +1,713 @@
+/* Custom CSS for Bootstrap 5.3 template designed for Web and Time-Based Design Subject [DESN1021]- 2023 */
+/* Date: Date: 27 October 2023 */
+/* Author: Web and Time-based Design Subject */
+
+/* sets the default rem size for an entire page (for all sizing to be relative to) */
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  font-family: 'Roboto Slab', serif !important;
+  margin: 0 auto;
+  padding: 0;
+  background-color: beige;
+}
+
+/* Resume template specific styles  */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Railway', sans-serif;
+  color: blueviolet !important;
+}
+
+h1 {
+	 color: beige;
+	 font-weight: 700;
+	 padding-bottom: 1rem;
+	 font-size: 3rem;
+	 animation: effect 5s linear infinite;
+}
+
+@keyframes effect {
+					 0% {
+							 background: linear-gradient(
+                #FB079A, #c0f905);
+							 -webkit-background-clip: text;
+					 }
+
+					 100% {
+							 background: linear-gradient(
+                #c0f905, #FB079A);
+							 -webkit-background-clip: text;
+					 }
+			 }
+
+h2 {
+  color: #c0f905;
+padding-top: .5rem;
+font-size: 2.5rem;
+}
+
+h3 {
+  padding-bottom: 0.3rem;
+  padding-top: 1rem;
+	color: #c0f905;
+}
+
+h3.navmenu {
+  padding-bottom: 0.3rem;
+  padding-top: 0;
+}
+
+h4 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+color: #FB079A;
+}
+
+h5 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+color: #FB079A;
+}
+
+h6 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+color: #FB079A;
+}
+
+p, ul, ol, li, a {
+font-family: 'Roboto Slab', 'san-serif';
+color: rgb(0, 0, 0);
+}
+
+/*header style*/
+.header{
+	position: relative;
+	background-size: cover;
+	background-position: center;
+  margin-bottom: 3rem;
+}
+
+.overlay{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background-color:rgb(196, 164, 132);
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.description h1{
+	color: #c0f905;
+  font-size: 4rem;
+}
+
+.col-8 {
+  border: 0;
+  border-left: 6px solid #c0f905;
+  padding-left: 3rem;
+}
+
+.col-4 {
+  padding-right: 3rem;
+}
+
+/* Style for the sidebar */
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style for the links inside the sidebar */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181, !important;
+  display: block;
+}
+
+/* Add a hover effect (change background color) for the links */
+.sidebar a:hover {
+  background-color: #555, !important;
+  color: white;
+}
+
+a:hover {
+  color: #555;
+}
+
+/* Sidebar - end */
+
+/* BASIC PARALLAX - Start: https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm */
+/* Image patterns created using Adobe Firefly */
+
+.parallax-container {
+  max-width: 960px;
+  margin: 0 auto;
+  }
+  
+  /* ============================================================
+  SECTIONS
+  ============================================================ */
+  section.module:last-child {
+  margin-bottom: 0;
+  }
+  section.module h3 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  }
+  section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  }
+  section.module p:last-child {
+  margin-bottom: 0;
+  }
+  section.module.content {
+  padding: 40px 0;
+  background-color: rgba(207,216,220,0.5);
+  }
+  section.module.content:last-child {
+  margin-bottom: 60px;
+  }
+  section.module.parallax {
+  padding: 240px 0;
+  background-position: 0 0;
+  }
+  section.module.parallax h2 {
+  color: #82A510;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white;
+  }
+  section.module.parallax-1 {
+  background-image: url("../img/parralax_img_1.png");
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0,123,255,0.4);
+  background-blend-mode: screen;
+  }
+  section.module.parallax-2 {
+  background-image: url("../img/parralax_img_2.png");
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0,123,255,0.4);
+  background-blend-mode: screen;
+  }
+  section.module.parallax-3 {
+  background-image: url("../img/parralax_img_3.png");
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0,123,255,0.4);
+  background-blend-mode: screen;
+  }
+  
+  @media all and (min-width: 600px) {
+  section.module h3 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax {
+    padding: 300px 0;
+  }
+  section.module.parallax h2 {
+    font-size: 96px;
+  }
+  }
+  @media all and (min-width: 960px) {
+  section.module.parallax h2 {
+    font-size: 160px;
+  }
+  }
+  
+
+/* PARALLAX - End */
+
+/* CONTACT FORM - Start - sourced from: https://www.bootdey.com/snippets/view/contact-page-section */
+
+.contact-name {
+  margin-bottom: 30px;
+  }
+  
+  .contact-name h5 {
+  font-size: 22px;
+  color: #c0f905;
+  margin-bottom: 5px;
+  font-weight: 600;
+  }
+  
+  .contact-name p {
+  font-size: 18px;
+  margin: 0;
+  color: white;
+  }
+  
+  .social-share a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 10px;
+  }
+  
+  .social-share .instagram {
+  box-shadow: 0 8px 30px -4px rgba(234, 76, 137, 0.5);
+  background-color: #c0f905;
+  }
+  
+  .social-share .behance {
+  box-shadow: 0 8px 30px -4px rgba(0, 103, 255, 0.5);
+  background-color: #c0f905;
+  }
+  
+  .social-share .linkedin {
+  box-shadow: 0 8px 30px -4px rgba(1, 119, 172, 0.5);
+  background-color: #c0f905;
+  }
+  
+  .contact-form .form-control {
+  border-bottom: 1px solid #20247b;
+  background: white;
+  border-radius: 0;
+  padding-left: 0;
+  box-shadow: none !important;
+  }
+  
+  .formcol {
+  background: grey;
+  }
+  
+  .contact-form .form-control:focus {
+  border-bottom: 1px solid #fc5356;
+  }
+  .contact-form .form-control.invalid {
+  border-bottom: 1px solid #ff0000;
+  }
+  
+  .contact-form .send {
+  margin-top: 20px;
+  }
+  
+  @media (max-width: 767px) {
+  .contact-form .send {
+  margin-bottom: 20px;
+  }
+  }
+  
+  .contact-form .send {
+  margin-top: 20px;
+  }
+  
+  .px-btn {
+  padding: 0 50px 0 20px;
+  line-height: 60px;
+  position: relative;
+  display: inline-block;
+  color: #20247b;
+  background: none;
+  }
+  
+  .px-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid #c0f905;
+  border-right: 1px solid transparent;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+  width: 60px;
+  height: 60px;
+  }
+  
+  .px-btn .arrow {
+  width: 13px;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 25px;
+  }
+  
+  .px-btn .arrow:after {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0;
+  display: inline-block;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+  
+  .formanchor {
+  color: white;
+  }
+  
+  .formanchor:hover {
+  color: #c0f905;
+  }
+  
+
+/* CONTACT FORM - End */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #FB079A;
+}
+
+.google {
+  background: brown;
+  color: white;
+}
+
+.linkedin {
+  background: brown;
+  color: white;
+}
+
+.youtube {
+  background: brown;
+  color: white;
+}
+
+/* FLOATING STICKY SOCIAL MEDIA - End */
+
+/* PORTFOLIO MODAL - Start: https://startbootstrap.com/theme/freelancer */
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color:#c0f905;;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+  }
+  
+  .divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+  }
+  
+  .divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+  }
+  
+  .divider-custom .divider-custom-icon {
+  color: #c0f905;
+  font-size: 2rem;
+  }
+  
+  .divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+  }
+  
+  .divider-custom.divider-light .divider-custom-icon {
+  color: #fff;
+  }
+  
+  .portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  }
+  
+  .portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color:  #c0f905;
+  }
+  
+  .portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+  }
+  
+  .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+  }
+  
+  .portfolio-modal .btn-close {
+  color: #1abc9c;
+  font-size: 2rem;
+  padding: 1rem;
+  }
+  
+  .portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+  }
+  
+  @media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  }
+  }
+  
+  .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #c0f905;
+    --bs-btn-border-color: #c0f905;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #c0f905;
+    --bs-btn-hover-border-color: #c0f905;
+    --bs-btn-focus-shadow-rgb: 60, 198, 171;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #c0f905;
+    --bs-btn-active-border-color: #c0f905;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #c0f905;
+    --bs-btn-disabled-border-color: #c0f905;
+  }
+/* PORTFOLIO MODAL - End */
+
+/* SPAN STANDOUT WORDS - Start */
+.standout {
+	color:brown;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+/* SPAN STANDOUT WORDS - End */
+
+/* EDUCATION PROFILE - Start */
+
+.job-detail {
+  border: 3px solid #FB079A;
+  border-radius: 6px;
+}
+
+.profile-education-icon {
+  border: 1px solid #FB079A;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  font-size: 42px;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #FB079A;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.candidates-profile-education {
+  padding: 64px 24px 24px;
+}
+
+.candidates-profile-education:hover .profile-education-icon {
+  background-color: #c0f905;
+  border: 1px solid #c0f905;
+  color: #FB079A;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* EDUCATION PROFILE - End */
+
+/* HEADER NAV - Start: https://www.codehim.com/bootstrap/bootstrap-5-navbar-with-center-logo/  */
+ .header {
+  padding-top: 1.8rem;
+  padding-bottom: 2.2rem;
+  padding-top: 0.5rem;
+}
+.header .nav-link,
+.header .navbar-brand,
+.header .navbar-toggler i {
+  color: #FB079A;
+  transition: color 0.2s linear;
+}
+.header .nav-link:hover,
+.header .navbar-brand:hover,
+.header .navbar-toggler i:hover {
+  color: #c0f905;
+}
+.header .navbar-brand {
+  font-size: 1.8rem;
+}
+.header .navbar-toggler {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+}
+.header .navbar-toggler i {
+  font-size: 1.5rem;
+}
+.header.headroom {
+  transition: all 0.2s linear;
+}
+.header.headroom--top, .header.headroom--top.headroom--pinned {
+  background-color: transparent;
+}
+.header.headroom--not-top.headroom--pinned {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.header.headroom--not-top.headroom--pinned .nav-link,
+.header.headroom--not-top.headroom--pinned .navbar-brand,
+.header.headroom--not-top.headroom--pinned .navbar-toggler i {
+  color: #c0f905;
+}
+.header.headroom--pinned {
+  transform: translateY(0%);
+}
+.header.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+.offcanvas .fa-close {
+  font-size: 1.8rem;
+  color: #c0f905;
+}
+.offcanvas.show .row {
+  padding-top: 2rem !important;
+  background-color: #FB079A;
+}
+.offcanvas.show .nav-link {
+  color: #c0f905;
+}
+
+button.navbar-toggler {
+  color: #FB079A;
+}
+
+/* HEADER NAV - End */
+
+
+/* MEDIA QUERIES - Start */
+/* Examples of customising Bootstrap's media queries at different 'snapping' points - for example, change the size of your browser window and watch the <p> text colour change. Don't EVER change the pixel variables or you will be creating snapping points between Bootstrap's default snapping points - just add your styles in the brackets of the @media queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+section.module.parallax h2 {
+  font-size: 70px;
+  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+section.module.parallax h2 {
+  font-size: 70px;
+  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+section.module.parallax h2 {
+  font-size: 70px;
+  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+section.module.parallax h2 {
+
+  font-size: 90px;
+
+  }
+
+/* // Extra Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+}
+
+/* MEDIA QUERIES - End */
+
+/* Custom CSS for Bootstrap 5.3 template designed for Web and Time-Based Design Subject [DESN1021]- 2023 */
